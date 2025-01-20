@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: t4ngfj9bb-go-gitops
+  description: This is GitOps manifest for t4ngfj9bb-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: t4ngfj9bb-go
+    backstage.io/kubernetes-id: t4ngfj9bb-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: t4ngfj9bb-go   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:t4ngfj9bb-go

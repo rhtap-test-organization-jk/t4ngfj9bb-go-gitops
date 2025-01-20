@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: t4ngfj9bb-go-repository
+spec:
+  url: https://github.com/rhtap-test-organization-jk/t4ngfj9bb-go
